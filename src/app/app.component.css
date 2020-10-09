@@ -1,0 +1,173 @@
+    /*navbar contents*/
+    
+    svg {
+        display: block;
+        font: 8.5em 'Roboto';
+        width: 1000px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    .text-copy {
+        fill: none;
+        stroke: rgba(250, 250, 250, 0.5);
+        stroke-dasharray: 6% 29%;
+        stroke-width: 4px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 6s infinite linear;
+    }
+    
+    .text-copy:nth-child(1) {
+        stroke: rgba(250, 250, 250, 0.9);
+        animation-delay: -1;
+    }
+    
+    .text-copy:nth-child(2) {
+        stroke: rgba(250, 250, 250, 0.3);
+        animation-delay: -2s;
+    }
+    
+    .text-copy:nth-child(3) {
+        stroke: rgba(250, 250, 250, 0.8);
+        animation-delay: -3s;
+    }
+    
+    .text-copy:nth-child(4) {
+        stroke: rgba(250, 250, 250, 0.4);
+        animation-delay: -4s;
+    }
+    
+    .text-copy:nth-child(5) {
+        stroke: rgba(250, 250, 250, 1);
+        animation-delay: -5s;
+    }
+    
+    @keyframes stroke-offset {
+        100% {
+            stroke-dashoffset: -35%;
+        }
+    }
+    /*my expenses and total expense*/
+    
+    .expense-title h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    
+    .total-text {
+        font-size: 20px;
+        margin-right: 40px;
+    }
+    
+    .total-amount {
+        font-size: 40px;
+        border-left: solid 1px rgba(250, 250, 250, 0.2);
+        padding-left: 40px;
+    }
+    /*input contents*/
+    
+    *::-webkit-input-placeholder {
+        color: rgba(250, 250, 250, 0.5)
+    }
+    
+    input:focus,
+    textarea:focus {
+        border: none;
+        box-shadow: none;
+        outline-offset: 0px;
+        outline: none;
+    }
+    
+    .input-field {
+        margin-top: 60px;
+    }
+    
+    #input-fields {
+        margin: 10px;
+        padding: 20px;
+        font-size: 14px;
+        color: rgba(250, 250, 250, 0.5);
+        border-radius: 5px;
+        width: 300px;
+        background-color: transparent;
+        border: solid 1px white;
+    }
+    /*card contents*/
+    
+    mat-card {
+        width: 500px;
+        margin: 15px 0px 15px 0px;
+    }
+    
+    mat-card:hover {
+        transform: scale(1.1);
+    }
+    
+    mat-card-subtitle {
+        margin-top: 10px !important;
+    }
+    
+    mat-card-title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    
+    .card-title {
+        color: #6200EA;
+    }
+    
+    .custom-add-expense-button {
+        margin-top: 20px;
+        padding: 15px 20px 15px 20px;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: #00ACC1;
+    }
+    
+    .card-content {
+        display: flex;
+    }
+    
+    .custom-card-button {
+        padding: 10px 40px 10px 40px;
+        background-color: transparent;
+        color: rgba(250, 250, 250, 0.5);
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: lighter;
+        animation: 2s;
+    }
+    
+    .custom-card-button:hover {
+        padding: 10px 40px 10px 40px;
+        background-color: transparent;
+        color: rgba(250, 250, 250, 1);
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+    
+    mat-icon {
+        margin: 10px;
+    }
+    
+    button:active {
+        border-style: none;
+    }
+    /*footer contents*/
+    
+    .copyright-text {
+        color: rgba(250, 250, 250, 0.5);
+    }
+    
+    .copyright-text a {
+        color: rgba(250, 250, 250, 0.5);
+        text-decoration: none;
+    }
